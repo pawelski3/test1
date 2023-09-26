@@ -16,8 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 export const appRouters: Routes = [
   { path: '', component: OneComponent },
-  { path: 'one', component: OneComponent },
-  { path: 'two', component: TwoComponent },
+  { path: 'O projekcie', component: OneComponent },
+  { path: 'Wykres 3D', component: TwoComponent },
   // {
   //   path: 'three', component: ThreeComponent,
   //   data: [{ version: '1.1.8' }]
