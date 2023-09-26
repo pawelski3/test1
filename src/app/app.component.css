@@ -263,7 +263,7 @@ a.nav__link:hover{
     
 }
 
-#SpaButton{
+/* #SpaButton{
     background-image:url("../assets/itspa.jpg");
 }
 
@@ -307,7 +307,7 @@ a.nav__link:hover{
         line-height: 100px;
         font-size: 20px;
     }
-}
+} */
 
 a{
     text-decoration: none;
@@ -345,7 +345,7 @@ a{
   margin:0;
 }
 
-#jsLogo{
+/* #jsLogo{
     background-image:url("../assets/jsLogo2.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -408,7 +408,7 @@ a{
     width: 120px;
     height:100px;
     outline:1px solid black;
-}
+} */
 
 @media(max-width: 796px) {
     #expressLogo{
@@ -417,7 +417,7 @@ a{
     }
 }
 
-#phpLogo{
+/* #phpLogo{
     background-image:url("../assets/phpLogo.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -434,7 +434,7 @@ a{
     width: 120px;
     height:100px;
     margin-left: 20px;
-}
+} */
 
 .contact{
     color:black;
