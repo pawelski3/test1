@@ -33,7 +33,7 @@ body{
 }
 
 #logo{
-    background-image: url("../assets/logoWhite.png");
+    background-image: url("../../assets/logoWhite.png");
     width:75%;
     height: 50px; 
     background-position: center; 
@@ -140,7 +140,7 @@ a.nav__link:hover{
 }
 
 .bg1{
-    background-image:url("../assets/laptop2.jpg");   
+    background-image:url("../../assets/laptop2.jpg");   
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ a.nav__link:hover{
   }
 
 .bg2{
-    background-image:url("../assets/laptop.jpg"); 
+    background-image:url("../../assets/laptop.jpg"); 
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@ a.nav__link:hover{
   }
 
   .about{
-    background-image:url("../assets/laptop.jpg");   
+    background-image:url("../../assets/laptop.jpg");   
     background-attachment:fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -264,27 +264,27 @@ a.nav__link:hover{
 }
 
 #SpaButton{
-    background-image:url("../assets/itspa.jpg");
+    background-image:url("../../assets/itspa.jpg");
 }
 
 #ListaButton{
-    background-image:url("../assets/lista.jpg");
+    background-image:url("../../assets/lista.jpg");
 }
 
 #PogodaButton{
-    background-image:url("../assets/pogoda.jpg");
+    background-image:url("../../assets/pogoda.jpg");
 }
 
 #SklepButton{
-    background-image:url("../assets/sklep.jpg");
+    background-image:url("../../assets/sklep.jpg");
 }
 
 #ZadaniaButton{
-    background-image:url("../assets/zadania.jpg");
+    background-image:url("../../assets/zadania.jpg");
 }
 
 .GithubButton{
-    background-image:url("../assets/github.jpg");
+    background-image:url("../../assets/github.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -346,7 +346,7 @@ a{
 }
 
 #jsLogo{
-    background-image:url("../assets/jsLogo2.png");
+    background-image:url("../../assets/jsLogo2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -355,7 +355,7 @@ a{
 }
 
 #htmlLogo{
-    background-image:url("../assets/htmlLogo.png");
+    background-image:url("../../assets/htmlLogo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -364,7 +364,7 @@ a{
 }
 
 #cssLogo{
-    background-image:url("../assets/cLogo.png");
+    background-image:url("../../assets/cLogo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -373,7 +373,7 @@ a{
 }
 
 #bootstrapLogo{
-    background-image:url("../assets/bootstrapLogo.png");
+    background-image:url("../../assets/bootstrapLogo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -382,7 +382,7 @@ a{
 }
 
 #AngularLogo{
-    background-image:url("../assets/AngularLogo.png");
+    background-image:url("../../assets/AngularLogo.png");
     background-position:center;
     background-repeat: no-repeat;
     background-size: 80%;
@@ -391,7 +391,7 @@ a{
 }
 
 #mongoDBLogo{
-    background-image:url("../assets/mongoDBLogo.png");
+    background-image:url("../../assets/mongoDBLogo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -400,7 +400,7 @@ a{
 }
 
 #expressLogo{
-    background-image:url("../assets/expressLogo2.jpg");
+    background-image:url("../../assets/expressLogo2.jpg");
     background-color:white;
     background-position: center;
     background-repeat: no-repeat;
@@ -418,7 +418,7 @@ a{
 }
 
 #phpLogo{
-    background-image:url("../assets/phpLogo.png");
+    background-image:url("../../assets/phpLogo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -427,7 +427,7 @@ a{
 }
 
 #mysqlLogo{
-    background-image:url("../assets/mysqlLogo.png");
+    background-image:url("../../assets/mysqlLogo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;

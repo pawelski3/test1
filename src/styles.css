@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+}
+
+
+body{
+    --nav-width:200px;
+    --contentTextColor:rgb(210, 226, 255);
+    --bodyColor:#120397;
+    margin: 0 0 0 var(--nav-width);
+    font-family: 'Quicksand',sans-serif;
+    font-size: 20px;
+}
