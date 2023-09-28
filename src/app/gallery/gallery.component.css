@@ -1,0 +1,450 @@
+
+/* *{
+    margin:0;
+} */
+
+body{
+    /* --nav-width:200px;
+    --contentTextColor:rgb(210, 226, 255);
+    --bodyColor:#120397; 
+    margin: 0 0 0 var(--nav-width); 
+    margin: 0 0 0 200px;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 20px;
+    background-color: #04011f;  */
+}
+
+.nav{
+    position: fixed;
+    top:0;
+    left:0;
+    width:var(--nav-width);
+    height:100vh;
+    background-color: #222222;
+    background-image:linear-gradient(125deg,#04011f,#3985ff);
+    background-size: 400%;
+    animation:bganimation 45s infinite;
+}
+
+#display2{
+    width:var(--nav-width);
+    height:100vh;
+    outline:2px solid green;
+}
+
+#logo{
+    background-image: url("../../assets/logoWhite.png");
+    width:75%;
+    height: 50px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.nav__link{
+    display:block;
+    padding:12px 18px;
+    text-decoration:none;
+    color:#eeeeee;
+    font-weight:500;
+   
+}
+
+@media (max-width: 576px) {
+    body { 
+        margin: 0 0 0 0;
+    } 
+    .nav{
+        width:100%;
+        height:auto;
+        display: flex;
+        align-items:center;
+    }
+
+    .nav__link{
+        padding:6px 3px;
+        color:#eeeeee;
+        font-weight:50;
+        font-size: 15px;
+        text-align: center;
+        display:inline;
+        width:30%;
+    }
+
+    #logo{
+        border-bottom:none;
+        background-size: 90%;
+        background-position:left;
+        width:30%;
+        height: 30px; 
+    }
+
+    #app{
+        margin-top: 20px;
+        line-height:0;
+        font-weight: 100;
+        width:100%;
+    }
+
+    .contentText{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 15px;
+        width:100%;
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+
+    h1{
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+
+    p{
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+}
+
+@keyframes bganimation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+a.nav__link:hover{
+    background:rgba(255,255,255,0.05);
+}
+
+#app{
+    line-height:1.5;
+    font-weight: 500;
+    width:100%;
+}
+
+.title{
+    text-align: center;
+    color:var(--bodyColor);
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.bg1{
+    background-image:url("../../assets/laptop2.jpg");   
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+  }
+
+.bg2{
+    background-image:url("../../assets/laptop.jpg"); 
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+  }
+
+.activeLink{
+    border:none;
+    border-right:10px solid var(--contentTextColor);
+  }
+
+  @media(max-width: 576px){
+    .activeLink{
+        border:none;
+        box-sizing: border-box;
+        border-bottom:2px solid var(--contentTextColor);
+          }
+  }
+
+  .about{
+    background-image:url("../../assets/laptop.jpg");   
+    background-attachment:fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+    padding-top: 60px;
+  }
+
+  @media(max-width: 576px){
+      .about{
+        height:90vh;
+      }
+  }
+
+
+.contentTextAbout{
+    background-color: var(--contentTextColor);
+    opacity: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 300px;
+    width:80%;
+    margin-right: auto;
+    margin-left: auto; 
+    border-radius: 25px;
+}
+
+.aboutP{ 
+    width:80%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--contentTextColor);
+    opacity: 100%;
+    padding-bottom: 10px;
+}
+
+@media(max-width: 576px){
+    .aboutP{ 
+        font-size: 15px;
+    }
+}
+
+.contentText{
+    background-color: var(--contentTextColor);
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 370px;
+    text-align: justify;
+}
+
+.myText{
+   min-height: 90px;
+}
+
+.space{
+    min-height: 100px;
+    width:50%;
+}
+
+.space1{
+    min-height: 50px;
+    width:50%;
+}
+
+.NetButton{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height:100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    color:var(--bodyColor);
+}
+
+@media (max-width: 576px) {
+    .NetButton{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        margin-left: 10%;
+        text-align: center;
+        line-height: 100px;
+        font-size: 30px;
+    }
+    
+}
+
+/* #SpaButton{
+    background-image:url("../../assets/itspa.jpg");
+}
+
+#ListaButton{
+    background-image:url("../../assets/lista.jpg");
+}
+
+#PogodaButton{
+    background-image:url("../../assets/pogoda.jpg");
+}
+
+#SklepButton{
+    background-image:url("../../assets/sklep.jpg");
+}
+
+#ZadaniaButton{
+    background-image:url("../../assets/zadania.jpg");
+}
+
+.GithubButton{
+    background-image:url("../../assets/github.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    width: 200px;
+    height:100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    color:var(--bodyColor);
+} */
+
+@media (max-width: 576px) {
+    .GithubButton{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        width: 80px;
+        height:100px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 20px;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.buttons{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+   margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.Logos{
+    display:flex;
+    justify-content:left;
+    align-items: center;
+    margin-top: 10px;
+}
+
+@media(max-width: 576px){
+    .buttons{
+        width: 90%;
+        margin-top: 1px;
+    }
+    
+    .Logos{
+        width: 90%;
+        margin-top: 0px;
+    }
+}
+
+.techLogo{
+  margin:0;
+}
+
+/* #jsLogo{
+    background-image:url("../../assets/jsLogo2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100px;
+    height:100px;
+}
+
+#htmlLogo{
+    background-image:url("../../assets/htmlLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    width: 120px;
+    height:100px;
+}
+
+#cssLogo{
+    background-image:url("../../assets/cLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    width: 120px;
+    height:100px;
+}
+
+#bootstrapLogo{
+    background-image:url("../../assets/bootstrapLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    width: 120px;
+    height:100px;
+}
+
+#AngularLogo{
+    background-image:url("../../assets/AngularLogo.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    width: 120px;
+    height:100px;
+}
+
+#mongoDBLogo{
+    background-image:url("../../assets/mongoDBLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 120px;
+    height:100px;
+}
+
+#expressLogo{
+    background-image:url("../../assets/expressLogo2.jpg");
+    background-color:white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 120px;
+    height:100px;
+    outline:1px solid black;
+} */
+
+@media(max-width: 796px) {
+    #expressLogo{
+        outline:none;
+        background-color:transparent;
+    }
+}
+
+/* #phpLogo{
+    background-image:url("../../assets/phpLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 120px;
+    height:100px;
+}
+
+#mysqlLogo{
+    background-image:url("../../assets/mysqlLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 120px;
+    height:100px;
+    margin-left: 20px;
+} */
+
+.contact{
+    color:black;
+    text-align:center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+@media(max-width: 576px){
+    .contact{
+        font-size: 18px;
+    }
+}

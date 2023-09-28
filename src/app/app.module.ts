@@ -12,12 +12,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { HttpClientModule } from '@angular/common/http';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 export const appRouters: Routes = [
   { path: '', component: OneComponent },
   { path: 'O projekcie', component: OneComponent },
   { path: 'Wykres 3D', component: TwoComponent },
+  { path: 'Galeria 3D', component: GalleryComponent },
   // {
   //   path: 'three', component: ThreeComponent,
   //   data: [{ version: '1.1.8' }]
@@ -41,7 +43,8 @@ export const appRouters: Routes = [
     AppComponent,
     OneComponent,
     TwoComponent,
-    WarningComponent
+    WarningComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRouters),
