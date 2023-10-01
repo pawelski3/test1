@@ -9,13 +9,27 @@
           <h1>Wykres 3D</h1>
         </div>
         <p class="myText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim tellus et purus tristique, 
+          Z powodów technicznych wykres nie przedstawia aktualnych kursów walut !!! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim tellus et purus tristique, 
           at interdum eros rutrum. Nullam et ligula at massa pretium efficitur. Vivamus porta tellus urna. 
           Phasellus imperdiet venenatis sapien, sollicitudin vestibulum ante. Pellentesque vel placerat justo.
            Etiam placerat lorem odio, a eleifend lorem dignissim quis. Aliquam vitae pellentesque ipsum. 
            Nam bibendum mattis metus, eu volutpat lectus sodales eu. 
-        </p>
-        <div class="Logos">
+           </p>
+           <div id="select">
+           <label>Wybierz walutę </label>
+           <select style="width:200px;" id="s1" (change)='klik(s1.value)' #s1 >
+            <ng-container *ngFor="let p of CurrCodesandNames; let i=index;">
+                <ng-container *ngIf='p[0] === "CHF"; else else1'>
+                    <option value={{p[0]}} selected>{{p[1]}} ({{p[0]}})</option>
+                </ng-container>
+          
+                <ng-template #else1>
+            <option value={{p[0]}}>{{p[1]}} ({{p[0]}})</option>
+                </ng-template>
+          </ng-container>
+          </select>
+        </div>
+        <!-- <div class="Logos">
   
           <div class="techLogo" id="htmlLogo"></div>
           <div class="techLogo" id="cssLogo"></div>
@@ -28,26 +42,28 @@
             <p class="GithubButton"></p>
           </a>
           <a href="http://itspa.ct8.pl/" target="_blank">
-            <p class="NetButton" id="SpaButton">Live</p>
+            <p class="NetButton" id="SpaButton"></p>
           </a>
-        </div>
+        </div> -->
+        <div id="displayText"></div> 
       </div>
-      <div class="space"></div>
-     <div id="displayText"></div> 
+      <!-- <div class="space"></div> -->
+
+     
+
+
+
+     
     </section>
   
     <section class="bg2">
       <div class="contentText">
   
         <div class="title">
-          <h1>Opis</h1>
+          <h1></h1>
         </div>
         <p class="myText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim tellus et purus tristique, 
-          at interdum eros rutrum. Nullam et ligula at massa pretium efficitur. Vivamus porta tellus urna. 
-          Phasellus imperdiet venenatis sapien, sollicitudin vestibulum ante. Pellentesque vel placerat justo.
-           Etiam placerat lorem odio, a eleifend lorem dignissim quis. Aliquam vitae pellentesque ipsum. 
-           Nam bibendum mattis metus, eu volutpat lectus sodales eu. 
+         test 
         </p>
         <div class="Logos">
   
@@ -66,7 +82,7 @@
             <p class="GithubButton" target="_blank"></p>
           </a>
           <a href="http://listazadan.herokuapp.com/" target="_blank">
-            <p class="NetButton" id="ListaButton">Live</p>
+            <p class="NetButton" id="ListaButton"></p>
           </a>.
         </div>
       </div>

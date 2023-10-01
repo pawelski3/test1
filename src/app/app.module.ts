@@ -13,6 +13,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ServiceCurrService } from './service-curr.service';
 
 
 export const appRouters: Routes = [
@@ -48,8 +49,9 @@ export const appRouters: Routes = [
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRouters),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ServiceCurrService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
