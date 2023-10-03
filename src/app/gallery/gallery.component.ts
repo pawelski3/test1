@@ -66,7 +66,7 @@ ngOnInit(): void {
   materialArray4.push(new THREE.MeshBasicMaterial({ color: 0x563400 }))
   materialArray4.push(new THREE.MeshBasicMaterial({ color: 0x563400 }))
   materialArray4.push(new THREE.MeshBasicMaterial({ color: 0x563400 }))
-  console.log("matarr4, ",materialArray4)
+
   let texture8= new THREE.TextureLoader().load("../assets/gallery/foto3.JPG")
   let materialArray8 = []
   materialArray8.push(new THREE.MeshBasicMaterial({ map: texture8 }))
