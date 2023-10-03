@@ -4,14 +4,7 @@
 } */
 
 body{
-    /* --nav-width:200px;
-    --contentTextColor:rgb(210, 226, 255);
-    --bodyColor:#120397; 
-    margin: 0 0 0 var(--nav-width); 
-    margin: 0 0 0 200px;
-    font-family: 'Quicksand',sans-serif;
-    font-size: 20px;
-    background-color: #04011f;  */
+   
 }
 
 .nav{
@@ -263,39 +256,6 @@ a.nav__link:hover{
     
 }
 
-/* #SpaButton{
-    background-image:url("../../assets/itspa.jpg");
-}
-
-#ListaButton{
-    background-image:url("../../assets/lista.jpg");
-}
-
-#PogodaButton{
-    background-image:url("../../assets/pogoda.jpg");
-}
-
-#SklepButton{
-    background-image:url("../../assets/sklep.jpg");
-}
-
-#ZadaniaButton{
-    background-image:url("../../assets/zadania.jpg");
-}
-
-.GithubButton{
-    background-image:url("../../assets/github.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    width: 200px;
-    height:100px;
-    text-align: center;
-    line-height: 100px;
-    font-size: 40px;
-    color:var(--bodyColor);
-} */
-
 @media (max-width: 576px) {
     .GithubButton{
         background-position: center;
@@ -345,70 +305,10 @@ a{
   margin:0;
 }
 
-#jsLogo{
-    /* background-image:url("../../assets/jsLogo2.png"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100px;
-    height:100px;
-}
 
-#htmlLogo{
-    /* background-image:url("../../assets/project/htmlLogo.jpg"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    width: 120px;
-    height:100px;
-}
 
-#cssLogo{
-    /* background-image:url("../../assets/project/cLogo.png"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    width: 120px;
-    height:100px;
-}
 
-#bootstrapLogo{
-    /* background-image:url("../../assets/bootstrapLogo.png"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    width: 120px;
-    height:100px;
-} 
 
-#AngularLogo{
-    /* background-image:url("../../assets/project/AngularLogo.png"); */
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    width: 120px;
-    height:100px;
-}
-
-#mongoDBLogo{
-    /* background-image:url("../../assets/mongoDBLogo.png"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 120px;
-    height:100px;
-}
-
-#expressLogo{
-    /* background-image:url("../../assets/expressLogo2.jpg"); */
-    background-color:white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 120px;
-    height:100px;
-    outline:1px solid black;
-} 
 
 @media(max-width: 796px) {
     #expressLogo{
@@ -417,24 +317,7 @@ a{
     }
 }
 
-/* #phpLogo{
-    background-image:url("../../assets/phpLogo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 120px;
-    height:100px;
-}
 
-#mysqlLogo{
-    background-image:url("../../assets/mysqlLogo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 120px;
-    height:100px;
-    margin-left: 20px;
-} */
 
 .contact{
     color:black;
