@@ -355,7 +355,7 @@ a{
 }
 
 #htmlLogo{
-    background-image:url("../../assets/project/htmlLogo.png");
+    /* background-image:url("../../assets/project/htmlLogo.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -364,7 +364,7 @@ a{
 }
 
 #cssLogo{
-    background-image:url("../../assets/project/cLogo.png");
+    /* background-image:url("../../assets/project/cLogo.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -382,7 +382,7 @@ a{
 } 
 
 #AngularLogo{
-    background-image:url("../../assets/project/AngularLogo.png");
+    /* background-image:url("../../assets/project/AngularLogo.png"); */
     background-position:center;
     background-repeat: no-repeat;
     background-size: 80%;
