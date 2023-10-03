@@ -71,6 +71,15 @@ export class TwoComponent implements OnInit {
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     }
+    let controls = new OrbitControls(camera, renderer.domElement)
+    controls.minDistance = 8
+    controls.maxDistance = 18
+
+    controls.minPolarAngle = Math.PI / 4
+    controls.maxPolarAngle = Math.PI / 2;
+
+    controls.minAzimuthAngle = -Math.PI / 4
+    controls.maxAzimuthAngle = Math.PI / 4
 
     let display = (<HTMLInputElement>document.getElementById("displayText"))
 
@@ -85,15 +94,13 @@ export class TwoComponent implements OnInit {
     })
     let materialMax = new THREE.MeshPhongMaterial({
       color: new THREE.Color('hsl(0, 0%, 100%)'),
-      emissive:new THREE.Color('hsl(0, 0%, 100%)'),
+      emissive: new THREE.Color('hsl(0, 0%, 100%)'),
       shininess: 80,
-      //map: texture
     })
 
     let materialMin = new THREE.MeshPhongMaterial({
       color: colorBlue,
       shininess: 80,
-      //map: texture
     })
 
     // wykres bez http 
@@ -104,7 +111,6 @@ export class TwoComponent implements OnInit {
     // ]
 
     let hights = this.ServiceCurrService.getCurrencyOne2(code)
-    // console.log("hights ", hights)
     let maxValue1 = Math.max(...hights)
     let minValue1 = Math.min(...hights)
 
@@ -113,29 +119,23 @@ export class TwoComponent implements OnInit {
 
       const tgeometry = new TextGeometry(code, {
         font: font,
-        size:2,//maxValue1/2,
+        size: 2,
         height: 0.3,
       });
       let textMesh = new THREE.Mesh(tgeometry, [
-        new THREE.MeshBasicMaterial({ color: 0xffffff}),//0xD2E2FF }),
+        new THREE.MeshBasicMaterial({ color: 0xffffff }),//0xD2E2FF }),
         new THREE.MeshNormalMaterial()
       ])
-      // textMesh.position.set(-3, 1, 3)
       textMesh.position.set(-2, -2, 2);
       scene.add(textMesh)
     });
 
     let cubeHight2 = []
     for (let i = 0; i < hights.length; i++) {
-      // avg1=+hights[i]
-      //console.log("pętla robi cuby bez http", hights[i], this.curr1Days[i])
       let cubeHight = (hights[i]);
-      // let cubeHight=(this.curr1Mid[i]-0.5*this.curr1Mid[i];
-      // this.cubeHights[i] = cubeHight
       cubeHight2[i] = cubeHight
       var cubeGeometry = new THREE.BoxGeometry(0.4, cubeHight, 1);
       let color7 = 0xD2E2FF
-      //let colorparse=parseInt(color7, 16);
       let material7 = new THREE.MeshPhongMaterial({
         color: color7,
         shininess: 80,
@@ -157,8 +157,6 @@ export class TwoComponent implements OnInit {
       scene.add(cube);
       if (i % 2 == 0 || hights[i] == maxValue1 || hights[i] == minValue1) {
         loaderText.load('../assets/Inter_Regular.json', function (font) {
-          // console.log("petla nr ", i)
-
           const tgeometry = new TextGeometry(text, {
             font: font,
             size: 0.12,
@@ -168,12 +166,9 @@ export class TwoComponent implements OnInit {
             new THREE.MeshBasicMaterial({ color: 0xffffff }),
             new THREE.MeshNormalMaterial()
           ])
-          // textMesh.position.set(-3, 1, 0)
           if (hights[i] == maxValue1 || hights[i] == minValue1) {
             textMesh1.position.set(-10 + i / 2 - 0.3, cubeHight - 1.55, 1.25);
           } else { textMesh1.position.set(-10 + i / 2 - 0.28, cubeHight - 2, 1.25); }
-          //else { textMesh1.position.set(-10 + i / 2 - 0.28, cubeHight - 2, 3); }
-
           scene.add(textMesh1)
         });
       }
@@ -184,15 +179,10 @@ export class TwoComponent implements OnInit {
     hights.forEach(num => {
       sum1 += Number(num);
     })
-    // console.log("sumsa ", sum1 / hights.length)
     const avg = sum1 / hights.length
 
-    const arr = hights//srednia plane
-    // let avg = arr.reduce((a, b) => a + b, 0) / arr.length;
-    //     const sum = hights.reduce((a, b) => a + b, 0);
-    // const avg = (sum / hights.length) ;
+    const arr = hights
     let avgText = avg
-    // console.log("Średnia ", avg.toFixed(4), hights);
     const geometryAv = new THREE.PlaneGeometry(hights.length * 0.5, 0.1);
     const materialAv = new THREE.MeshBasicMaterial(
       { color: 0xffffff, side: THREE.DoubleSide });
@@ -201,8 +191,7 @@ export class TwoComponent implements OnInit {
 
     planeAv.rotation.x = Math.PI / 2
     scene.add(planeAv);
-
-    let textAvg;//srednia tekst
+    let textAvg;
     loaderText.load('../assets/Inter_Regular.json', function (font) {
       const tgeometry = new TextGeometry("AVG " + avg.toFixed(4), {
         font: font,
@@ -213,15 +202,12 @@ export class TwoComponent implements OnInit {
         new THREE.MeshBasicMaterial({ color: 0xffffff }),
         new THREE.MeshNormalMaterial()
       ])
-      // textMesh.position.set(-3, 1, 0)
       textAvg.position.set(-11, avg - 2, 1.7);
-      // console.log("avarage1 ", avgText)
       scene.add(textAvg);
     });
-    //});//koniec htp
     let flag
-    if (code == "CHF" || code == "CZK" || code == "DKK" || code == "EUR" || code == "GBP" 
-    || code == "USD") {flag = code + ".jpg"} 
+    if (code == "CHF" || code == "CZK" || code == "DKK" || code == "EUR" || code == "GBP"
+      || code == "USD") { flag = code + ".jpg" }
     else { flag = "F0.jpg" }
 
 
@@ -229,11 +215,7 @@ export class TwoComponent implements OnInit {
     const geometryP = new THREE.PlaneGeometry(10, 3);
     const materialP = new THREE.MeshBasicMaterial(
       { color: 0xffffff, map: textureP });
-    // let materialP = new THREE.MeshPhongMaterial({
-    //   color: colorYellow,
-    //   shininess: 80,
-    //   map: textureP
-    // })
+
     const plane = new THREE.Mesh(geometryP, materialP);
     plane.position.set(1, -2, 3);
     plane.rotation.x = Math.PI / -2
@@ -246,8 +228,7 @@ export class TwoComponent implements OnInit {
     camera.position.y = avg - 2;
     let hemilight = new THREE.HemisphereLight(0xffffff, 0x000000, 2)
     scene.add(hemilight)
-    // let ambient = new THREE.AmbientLight(0x555500, 9)
-    // scene.add(ambient)
+
     const light = new THREE.PointLight(colorYellow, 2)
 
     light.position.z = 20
@@ -256,7 +237,6 @@ export class TwoComponent implements OnInit {
 
     scene.add(light)
 
-    let controls = new OrbitControls(camera, renderer.domElement)
     controls.update()
 
     const clock = new THREE.Clock()
@@ -268,8 +248,6 @@ export class TwoComponent implements OnInit {
     };
 
     animate();
-
-
 
   }
 }

@@ -354,8 +354,8 @@ a{
     height:100px;
 }
 
-/* #htmlLogo{
-    background-image:url("../../assets/htmlLogo.png");
+#htmlLogo{
+    background-image:url("../../assets/project/htmlLogo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -364,7 +364,7 @@ a{
 }
 
 #cssLogo{
-    background-image:url("../../assets/cLogo.png");
+    background-image:url("../../assets/project/cLogo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -373,16 +373,16 @@ a{
 }
 
 #bootstrapLogo{
-    background-image:url("../../assets/bootstrapLogo.png");
+    /* background-image:url("../../assets/bootstrapLogo.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
     width: 120px;
     height:100px;
-}
+} 
 
 #AngularLogo{
-    background-image:url("../../assets/AngularLogo.png");
+    background-image:url("../../assets/project/AngularLogo.png");
     background-position:center;
     background-repeat: no-repeat;
     background-size: 80%;
@@ -391,7 +391,7 @@ a{
 }
 
 #mongoDBLogo{
-    background-image:url("../../assets/mongoDBLogo.png");
+    /* background-image:url("../../assets/mongoDBLogo.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -400,7 +400,7 @@ a{
 }
 
 #expressLogo{
-    background-image:url("../../assets/expressLogo2.jpg");
+    /* background-image:url("../../assets/expressLogo2.jpg"); */
     background-color:white;
     background-position: center;
     background-repeat: no-repeat;
@@ -408,7 +408,7 @@ a{
     width: 120px;
     height:100px;
     outline:1px solid black;
-} */
+} 
 
 @media(max-width: 796px) {
     #expressLogo{
